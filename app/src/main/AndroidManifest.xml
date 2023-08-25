@@ -13,7 +13,23 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
-            android:name=".Snnday"
+            android:name=".friday"
+            android:exported="false"
+            android:label="@string/title_activity_friday" />
+        <activity
+            android:name=".thursday"
+            android:exported="false" />
+        <activity
+            android:name=".wedensday"
+            android:exported="false" />
+        <activity
+            android:name=".tuesday"
+            android:exported="false" />
+        <activity
+            android:name=".monday"
+            android:exported="false" />
+        <activity
+            android:name=".sunday"
             android:exported="false" />
         <activity
             android:name=".saturday"

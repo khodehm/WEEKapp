@@ -4,27 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
-public class swipe extends AppCompatActivity {
+public class wedensday extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_swipe);
-
+        setContentView(R.layout.activity_wedensday);
+        Intent intent = new Intent(this, friday.class);
+        intent.putExtra("wedensday", 5);
     }
-
-
-    public void one (View view){
-        Intent i1 = new Intent( this , saturday.class);
-
-
-    }
-
-
-
-
-
-
 }

@@ -4,13 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".saturday">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Saturday"
-        android:gravity="center"
-        android:textSize="50sp"/>
+    tools:context=".thursday">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

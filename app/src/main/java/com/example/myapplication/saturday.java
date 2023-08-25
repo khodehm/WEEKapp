@@ -11,7 +11,7 @@ public class saturday extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_saturday);
-
-        Intent i1 =  new Intent();
+        Intent intent = new Intent(this, sunday.class);
+        intent.putExtra("sunday",3);
     }
 }
