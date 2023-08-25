@@ -7,10 +7,16 @@
     tools:context=".saturday">
 
     <TextView
+        android:id="@+id/SA"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="Saturday"
         android:gravity="center"
         android:textSize="50sp"/>
+    <EditText
+        android:id="@+id/saa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

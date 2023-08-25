@@ -5,41 +5,39 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     public EditText ed;
-    public TextView tv;
+    public TextView sa;
     String Day;
-
-
+    Button Clk;
     public EditText getEd() {
         return ed;
     }
-
-    public void setTv(TextView tv) {
-        this.tv = tv;
-    }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tv = findViewById(R.id.Tv1);
+        sa = findViewById(R.id.Tv1);
         ed = findViewById(R.id.ED);
-        Intent intent=new Intent(this,  saturday.class);
-        startActivity(intent);
-        click(intent);
 
+        Intent S = new Intent(this, saturday.class);
+        S.putExtra("day one of week ",1);
+        Intent Su = new Intent(this, sunday.class);
         switch ("Day") {
-
             case ("saturday"):
-                Day = "1";
-                break;
+                if (Day == "1") {
+                    startActivity(S);
+                }
+                    break;
             case ("sunday"):
-                Day = "2";
+                if (Day == "2") {
+                    startActivity(Su);
+                }
                 break;
             case ("mondday"):
                 Day = "3";
@@ -59,13 +57,14 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void click(Intent intent2) {
+    public void click(View view) {
         findViewById(R.id.BTN);
-        tv.setText(Day);
-        ed.setText(Day);
+       Day= ed.getText().toString();
+
     }
+
     public void week() {
-        Intent intent = new Intent(this, swipe.class);
+        Intent intent = new Intent(this, saturday.class);
         startActivity(intent);
         intent.getExtras();
     }

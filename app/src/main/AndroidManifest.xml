@@ -35,9 +35,6 @@
             android:name=".saturday"
             android:exported="false" />
         <activity
-            android:name=".swipe"
-            android:exported="false" />
-        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
